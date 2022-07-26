@@ -34,6 +34,31 @@ public class Main {
                 System.out.print("перерыв в " + breakTime[r] + " часов, ");
             }
         }
+        //ex3
+        System.out.println("");
+        for (int i = numbers.length - 1; i >= 0; i-- ) {
+            if (i == numbers.length - 3)
+                System.out.print(numbers[i]);
+            else {
+                System.out.print(numbers[i] + ", ");
+            }
+        }
+        System.out.println("");
+        for ( int t = q.length - 1; t >= 0; t-- ) {
+            if ( t == q.length - 3)
+                System.out.print(q[t]);
+            else {
+                System.out.print(q[t] + ", ");
+            }
+        }
+        System.out.println("");
+        for ( int r = breakTime.length - 1; r >= 0; r--) {
+            if ( r == breakTime.length -4)
+                System.out.print("перерыв в " + breakTime[r] + " часов.");
+            else {
+                System.out.print("перерыв в " + breakTime[r] + " часов, ");
+            }
+        }
     }
 }
 
