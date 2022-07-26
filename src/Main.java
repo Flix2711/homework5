@@ -36,7 +36,7 @@ public class Main {
         }
         //ex3
         System.out.println("");
-        for (int i = numbers.length - 1; i >= 0; i-- ) {
+        for (int i = numbers.length - 1; i >= 0; i--) {
             if (i == numbers.length - 3)
                 System.out.print(numbers[i]);
             else {
@@ -44,21 +44,37 @@ public class Main {
             }
         }
         System.out.println("");
-        for ( int t = q.length - 1; t >= 0; t-- ) {
-            if ( t == q.length - 3)
+        for (int t = q.length - 1; t >= 0; t--) {
+            if (t == q.length - 3)
                 System.out.print(q[t]);
             else {
                 System.out.print(q[t] + ", ");
             }
         }
         System.out.println("");
-        for ( int r = breakTime.length - 1; r >= 0; r--) {
-            if ( r == breakTime.length -4)
+
+        for (int r = breakTime.length - 1; r >= 0; r--) {
+            if (r == breakTime.length - 4)
                 System.out.print("перерыв в " + breakTime[r] + " часов.");
             else {
                 System.out.print("перерыв в " + breakTime[r] + " часов, ");
             }
         }
+        //ex4
+        System.out.println(" ");
+        int[] number = new int[3];
+        number[0] = 1;
+        number[1] = 2;
+        number[2] = 3;
+        int z = 1;
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] % 2 != 0 && i == numbers.length - 1)
+                System.out.print(number[i] + z);
+            else if (number[i] % 2 != 0)
+                System.out.print(number[i] + z + ", ");
+            else {
+                System.out.print(number[i] + ", ");
+            }
+        }
     }
 }
-
